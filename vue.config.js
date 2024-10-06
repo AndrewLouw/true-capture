@@ -9,5 +9,7 @@ module.exports = defineConfig({
         additionalData: `@import "@/styles/colors.scss";`
       }
     }
-  }
+  },
+ 
+  publicPath: process.env.NODE_ENV === "production" ? "/true-capture/" : "/",
 })
